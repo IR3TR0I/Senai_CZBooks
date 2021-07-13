@@ -10,7 +10,7 @@ namespace Senai_CZBooksWebAPI.ViewModel
     public class LoginViewModel
     {
         [Required(ErrorMessage = "Informe seu Email de Usuário!")]
-        public String Email { get; set; }
+        public string Email { get; set; }
 
         [Required(ErrorMessage = "Informe sua Senha de Usuário!")]
         public string Senha { get; set; }

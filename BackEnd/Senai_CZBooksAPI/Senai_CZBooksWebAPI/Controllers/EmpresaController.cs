@@ -37,7 +37,7 @@ namespace Senai_CZBooksWebAPI.Controllers
             }
         }
 
-
+        [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
             try

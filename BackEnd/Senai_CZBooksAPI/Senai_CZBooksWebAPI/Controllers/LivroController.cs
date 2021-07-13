@@ -55,6 +55,7 @@ namespace Senai_CZBooksWebAPI.Controllers
 
         //Cadastro só ADM
         [Authorize(Roles ="1")]
+        [HttpPost]
         public IActionResult Post(Livro novoLivro)
         {
             try

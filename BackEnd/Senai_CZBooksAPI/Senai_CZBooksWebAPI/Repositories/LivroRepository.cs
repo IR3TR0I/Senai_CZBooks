@@ -74,10 +74,16 @@ namespace Senai_CZBooksWebAPI.Repositories
 
         public List<Livro> Listar()
         {
-            return ctx.Livros
+            return ctx.Livros.ToList();
+        }
 
-                .Include(e => e.Autor)
-                .Include(e => e.IdCategoria)
+        public List <Livro> Minhas(int idUsuario)
+        {
+            Autor LivroBuscado = ctx.Autors.FirstOrDefault(c => c.IdUsuario == idUsuario);
+            return ctx.Livros
+                .Where(a => a.IdAutor == LivroBuscado.IdAutor)
+                .Include(a => a.IdAutorNavigation)
+                .Include(a => a.IdCategoriaNavigation)
                 .ToList();
         }
     }

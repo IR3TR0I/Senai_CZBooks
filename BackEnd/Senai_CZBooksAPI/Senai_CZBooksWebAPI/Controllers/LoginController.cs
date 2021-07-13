@@ -27,7 +27,7 @@ namespace Senai_CZBooksWebAPI.Controllers
         }
 
 
-        [HttpPatch]
+        [HttpPost]
         public IActionResult Post(LoginViewModel login)
         {
             try

@@ -23,7 +23,8 @@ namespace Senai_CZBooksWebAPI.Repositories
 
         public void Cadastrar(Categorium novaCategorium)
         {
-            throw new NotImplementedException();
+            ctx.Categoria.Add(novaCategorium);
+            ctx.SaveChanges();
         }
 
         public void Deletar(int id)
@@ -33,7 +34,7 @@ namespace Senai_CZBooksWebAPI.Repositories
 
         public List<Categorium> Listar()
         {
-            throw new NotImplementedException();
+            return ctx.Categoria.ToList();
         }
     }
 }

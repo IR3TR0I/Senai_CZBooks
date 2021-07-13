@@ -33,17 +33,29 @@ Values	('Ação'),
 		('Comédia Romântica');
 Go
 
-Insert Into Livros(IdCategoria,Titulo,Sinopse,Categoria,Autor,Preco,dataPublicação)
-Values			  (4,'Neuromancer','Neuromancer conta a história de Case, um cowboy do ciberespaço e hacker da matrix. Como punição por tentar enganar os patrões, seu sistema nervoso foi contaminado por uma toxina que o impede de entrar no mundo virtual.','Sci-Fi','Wiliam Gibson',32.90,'30/05/2012'),
-					(5,'Frankenstein','O livro narra a história do ousado doutor Victor Frankenstein, cientista que se lança no experimento de retomar a vida de um ser inanimado. Isso resulta na concepção de uma criatura sobre-humana e monstruosa que passa a lhe perseguir, tornando-se um arquétipo de seu próprio criador.','Terror','Mary Shelley',59.99,'28/09/2006'),
-					(7,'Hamlet','A peça, situada na Dinamarca, reconta a história de como o Príncipe Hamlet tenta vingar a morte de seu pai, Hamlet, o rei, executado por Cláudio, seu irmão, que o envenenou e em seguida tomou o trono casando-se com a rainha.','Drama','Wiliam Shakespeare',69.99,'14/04/1926'),
-					(1,'Cidade dos Ossos','Clary Fray, 15 anos, decide passar a noite em uma boate em Nova York. ... Clary testemunha um crime, e não um crime qualquer: um assassinato cometido por três adolescentes cobertos por enigmáticas tatuagens, brandindo armas esquisitas. Para completar, o corpo da vítima desaparece no ar.','Ação','Cassandra Clare',45.99,'14/03/1987'),
-					(2,'Alice no país das Maravilhas','O livro conta a história de Alice, uma menina curiosa que segue um Coelho Branco de colete e relógio, mergulhando sem pensar na sua toca. ... A menina acaba fazendo parte de um julgamento sem sentido e sendo condenada à morte pela Rainha de Copas, tirana que mandava cortar a cabeça de todos que a incomodavam.','Aventura','Lewis Carrol',29.99,'23/06/1976');
+
+Insert into Autor(IdUsuario)
+Values		(1),
+			(2),
+			(3),
+			(4),
+			(5),
+			(6);
 Go
+
 
 Insert into EMPRESAS(NomeEmpresa,Endereço)
 Values		('Viciados em Livros','Av Getúlio Vargas-456'),
 			('ReadLovers','Rua Alemão-892'),
 			('Leitura sem Pensar','Rua Pensamento-234'),
 			('Liga da Leitura','Av Barão de Limeira-756');
+Go
+
+INSERT INTO Livros(idAutor,IdCategoria,Titulo,Sinopse,Autor,dataPublicação,Preco)
+VALUES				 (5,2,'Os Misterios dos codigos','Um livro que o ajuda a fazer codigos melhor','Wiliam Gibson','31/05/2020',20.50),
+					 (2,4,'A aventura em IA','O livro que fala sobre as aventuras de um pequeno robo','Bill Gates','05/03/2019',20.50),
+					 (3,5,'Os Gritos Mudos','Um pesquisador decidiu se mudar para uma cidade completamente esquecida','Mary Shelley','20/06/2021',50.75),
+					 (6,7,'Pintas Malditas','Como será que é acordar com um homem ruivo com cara de assasino e forçando você a ouvir a historia dele? descubra lendo','Cassandra Clare','12/07/2021',80),
+					 (1,3,'Amores sucumbidos','a meu amor, por que você se foi tão cedo será que se foi mesmo','Lewis Carrol','17/03/2021',20.50),
+					 (4,8,'Doces Saudades','Um Jovem Casal termina seu relacionamento mas as lembranças ficam','Wiliam Shakespeare','05/04/2003',19.80);
 Go

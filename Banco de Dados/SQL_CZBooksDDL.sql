@@ -32,24 +32,25 @@ Go
 
 Create Table Categoria (
 	IdCategoria INT PRIMARY KEY IDENTITY,
-	NomeCategoria VARCHAR(20) NOT NULL
+	NomeCategoria VARCHAR(200) NOT NULL
+);
+Go
+
+
+Create Table Autor (
+	IdAutor INT PRIMARY KEY IDENTITY,
+	IdUsuario INT FOREIGN KEY REFERENCES Usuarios(IdUsuario),
 );
 Go
 
 Create Table Livros (
 	IdLivros INT PRIMARY KEY IDENTITY,
+	idAutor INT FOREIGN KEY REFERENCES Autor(IdAutor),
 	IdCategoria Int FOREIGN KEY REFERENCES Categoria(IdCategoria),
 	Titulo VARCHAR(100) UNIQUE NOT NULL,
-	Sinopse VARCHAR(200) NOT NULL,
-	Categoria VARCHAR(10) NOT NULL,
+	Sinopse VARCHAR(200),
 	Autor VARCHAR(30) NOT NULL,
 	Preco Float,
-	dataPublicação Date,
-);
-Go
-
-Create Table Autor (
-	IdAutor INT PRIMARY KEY IDENTITY,
-	IdUsuario INT FOREIGN KEY REFERENCES Usuarios(IdUsuario),
+	dataPublicação VarChar(200),
 );
 Go

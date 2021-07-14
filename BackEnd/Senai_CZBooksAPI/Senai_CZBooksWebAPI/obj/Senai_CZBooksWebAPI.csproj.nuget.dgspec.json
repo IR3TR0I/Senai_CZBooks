@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\46732305824\\Desktop\\Senai_CZBooks\\BackEnd\\Senai_CZBooksAPI\\Senai_CZBooksWebAPI\\Senai_CZBooksWebAPI.csproj": {}
+    "C:\\Users\\moniq\\Desktop\\Senai_CZBooks\\BackEnd\\Senai_CZBooksAPI\\Senai_CZBooksWebAPI\\Senai_CZBooksWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\46732305824\\Desktop\\Senai_CZBooks\\BackEnd\\Senai_CZBooksAPI\\Senai_CZBooksWebAPI\\Senai_CZBooksWebAPI.csproj": {
+    "C:\\Users\\moniq\\Desktop\\Senai_CZBooks\\BackEnd\\Senai_CZBooksAPI\\Senai_CZBooksWebAPI\\Senai_CZBooksWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\46732305824\\Desktop\\Senai_CZBooks\\BackEnd\\Senai_CZBooksAPI\\Senai_CZBooksWebAPI\\Senai_CZBooksWebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\moniq\\Desktop\\Senai_CZBooks\\BackEnd\\Senai_CZBooksAPI\\Senai_CZBooksWebAPI\\Senai_CZBooksWebAPI.csproj",
         "projectName": "Senai_CZBooksWebAPI",
-        "projectPath": "C:\\Users\\46732305824\\Desktop\\Senai_CZBooks\\BackEnd\\Senai_CZBooksAPI\\Senai_CZBooksWebAPI\\Senai_CZBooksWebAPI.csproj",
-        "packagesPath": "C:\\Users\\46732305824\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\46732305824\\Desktop\\Senai_CZBooks\\BackEnd\\Senai_CZBooksAPI\\Senai_CZBooksWebAPI\\obj\\",
+        "projectPath": "C:\\Users\\moniq\\Desktop\\Senai_CZBooks\\BackEnd\\Senai_CZBooksAPI\\Senai_CZBooksWebAPI\\Senai_CZBooksWebAPI.csproj",
+        "packagesPath": "C:\\Users\\moniq\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\moniq\\Desktop\\Senai_CZBooks\\BackEnd\\Senai_CZBooksAPI\\Senai_CZBooksWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\46732305824\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\moniq\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
